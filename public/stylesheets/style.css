@@ -50,6 +50,35 @@ header button h3 {
     color: #fff;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--secondary-color);
+    padding: 1rem 2rem;
+    margin-bottom:0px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #FF2E6F;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-left: auto;
+}
+
+footer a:hover {
+    background-color: #ff4a8e;
+}
+
+footer p{
+    margin:auto;
+}
+
 .container {
     padding: 2rem;
     max-width: 1200px;
