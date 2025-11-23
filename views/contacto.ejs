@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>contacto</title>
-</head>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/registro.css" />
+        <link rel="stylesheet" href="/stylesheets/contacto.css">
+    </head>
 <body>
-    <p>Página contacto</p>
+    <%- include("partials/headerContacto")%>
+
+    <form method="POST" action="/contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button class="peticion" onclick="location.reload">Enviar</button>
+    </form>
+
+    <%- include("partials/footer")%>
+
 </body>
 </html>

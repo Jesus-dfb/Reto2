@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reto2</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <%- include("partials/headerRegistrado")%>
+
+    <section class="container">
+      <div class="introduccion">
+        <p>
+          Bienvenido a <strong>MovieHub</strong>: tu plataforma para gestionar y compartir tu colección de películas
+          favorita. Esta aplicación web te permite crear y mantener listas personalizadas, añadir reseñas y explorar
+          recomendaciones.
+          <br><br>
+          <strong>Características principales:</strong>
+        <ul>
+          <li>Soporte para múltiples usuarios: cada persona puede registrar su cuenta y gestionar su propia colección de
+            películas de forma independiente.</li>
+          <li>Añade, edita y elimina películas de tu colección.</li>
+          <li>Consulta la información detallada de cada película y añade tus propios comentarios.</li>
+          <li>Interfaz intuitiva y diseño moderno para facilitar tu experiencia.</li>
+        </ul>
+        ¡Empieza a explorar nuevas películas y organiza tus favoritas hoy mismo!
+        </p>
+      </div>
+      <section class="tarjetas">
+        <h2>Películas recientes</h2>
+        <div class="grid-tarjetas">
+          <div class="tarjeta">
+            <img class="portada" src="/images/dune2.jpg"
+              alt="Imagen de Dune: Parte Dos" width="80" height="200">
+            <h3 class="titulo">Dune: Parte Dos</h3>
+            <p class="descripcion">
+              Paul Atreides se une a los Fremen y comienza una revolución para vengar a su familia y salvar Arrakis en
+              esta épica continuación de ciencia ficción.
+            </p>
+          </div>
+          <div class="tarjeta">
+            <img class="portada" src="/images/kong.jpg"
+              alt="Imagen de Godzilla x Kong: The New Empire" width="80" height="200">
+            <h3 class="titulo">Godzilla x Kong: The New Empire</h3>
+            <p class="descripcion">
+              El poderoso Kong y el temible Godzilla se enfrentan a una inmensa amenaza oculta en nuestro mundo,
+              poniendo
+              a prueba su propia existencia y la supervivencia de la humanidad.
+            </p>
+          </div>
+          <div class="tarjeta">
+            <img class="portada" src="/images/kung4.jpg" 
+            alt="Imagen de Kung Fu Panda 4" width="80" height="200">
+            <h3 class="titulo">Kung Fu Panda 4</h3>
+            <p class="descripcion">
+              Po se convierte en el líder espiritual del Valle de la Paz, pero antes debe encontrar y entrenar un nuevo
+              Guerrero Dragón mientras enfrenta a una retorcida y poderosa enemiga.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <%- include("partials/footer")%>
+
+</body>
+
+</html>

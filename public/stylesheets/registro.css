@@ -1,26 +1,26 @@
+body{
+  min-height: 100vh;
+}
+
 form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-  
     background: #1e1e1e;
     width: 100%;
     max-width: 420px;
     margin: 2.5rem auto;
     padding: 2rem 2.5rem;
     border-radius: 12px;
-  
     box-shadow: 0 0 20px rgba(255, 46, 111, 0.15);
   }
 
   label {
     font-size: 0.95rem;
-    margin-bottom: 0.2rem;
     color: #e0e0e0;
   }
   
   input {
-    padding: 0.8rem;
     border-radius: 6px;
     border: 1px solid #444;
     background: #2a2a2a;
@@ -46,3 +46,4 @@ form {
     background-color: #ff4a8e;
     filter: brightness(1.1);
   }
+

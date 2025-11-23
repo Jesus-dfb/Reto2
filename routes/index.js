@@ -17,5 +17,4 @@ router.get("/contacto",function(req,res, next){
 router.get("/indexRegistrado",function(req,res, next){
   res.render("indexRegistrado",{title: "indexRegistrado"});
 });
-
 module.exports = router;
